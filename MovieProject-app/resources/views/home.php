@@ -6,6 +6,12 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello world enpoint.</h1>
+<br>
+<br>
+<br>
+<br>
+<center>
+    <h1>Hello world enpoint</h1>
+    </center>
 </body>
 </html>
