@@ -25,4 +25,9 @@ Route::get('/', function () {
 
 Auth::routes();
 
+Route::resource('peliculas', App\Http\Controllers\PeliculaController::class)->middleware('auth');
+Route::resource('alquilers', App\Http\Controllers\AlquilerController::class)->middleware('auth');
+Route::resource('compras', App\Http\Controllers\CompraController::class)->middleware('auth');
+//Route::resource('usuarios', App\Http\Controllers\UserController::class);
+
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
