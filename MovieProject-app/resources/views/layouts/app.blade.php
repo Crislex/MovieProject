@@ -32,10 +32,13 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
+                    @if(Auth::check())
                     <ul class="navbar-nav mr-auto">
-
+                        <a class="nav-link" href="{{ route('peliculas.index') }}">{{ __('Peliculas') }}</a>
+                        <a class="nav-link" href="{{ route('alquilers.index') }}">{{ __('Alquiler') }}</a>
+                        <a class="nav-link" href="{{ route('compras.index') }}">{{ __('Compras') }}</a>
                     </ul>
-
+                    @endif
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
